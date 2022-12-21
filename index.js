@@ -50,6 +50,9 @@ const displayClock = () => {
     getSeconds = `0${getSeconds}`;
   }
 
+  if (getMinutes == 0) {
+    getMinutes = "00";
+  }
   if (getMinutes > 0 && getMinutes < 10) {
     getMinutes = `0${getMinutes}`;
   }
